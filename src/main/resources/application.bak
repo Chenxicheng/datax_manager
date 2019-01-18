@@ -1,0 +1,6 @@
+#ZooKeeper
+dubbo.registry.address=192.168.30.18:2181
+
+logging.level.root=DEBUG
+
+server.port=8078
