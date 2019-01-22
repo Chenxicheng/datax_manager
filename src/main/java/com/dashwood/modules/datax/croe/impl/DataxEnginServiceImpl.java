@@ -89,6 +89,7 @@ public class DataxEnginServiceImpl implements DataxEnginService {
                 }
             }
         }
+        dataXJobCounter.setFileName(fileName);
         dataXJobCounter.setStatus(DataXJobCounter.COMPLETE);
         return dataXJobCounter;
     }

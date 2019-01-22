@@ -13,8 +13,8 @@ import java.io.Serializable;
 public class DataxJob implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private String fileName;
-    private String readConf;
-    private String writeConf;
-    private String settingConf;
+    private String fileName; // 文件名称
+    private String readConf; // 源端配置json
+    private String writeConf; // 目的端配置json
+    private String settingConf; // datax执行参数 json
 }

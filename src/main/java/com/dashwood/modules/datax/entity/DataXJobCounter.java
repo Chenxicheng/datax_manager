@@ -1,5 +1,6 @@
 package com.dashwood.modules.datax.entity;
 
+
 import java.io.Serializable;
 
 /**
@@ -30,6 +31,7 @@ public class DataXJobCounter implements Serializable {
      */
     public static final boolean NO_HAVE_EXCEPTION = false;
 
+    private String fileName; // 生成json文件名称
     private String status; // 状态
     private String taskStartTimeStamp; // 任务启动时刻
     private String taskEndTimeStamp; // 任务结束时刻
@@ -45,6 +47,14 @@ public class DataXJobCounter implements Serializable {
     private String errorMsg;
     
     private String hdfsFileName;
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
 
     public String getStatus() {
         return status;

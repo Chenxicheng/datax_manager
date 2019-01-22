@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-
+/**
+ * datax 生成执行datax的json文件
+ * @author 陈喜骋
+ */
 public class JsonFileUtils {
     /**
      * json模板
