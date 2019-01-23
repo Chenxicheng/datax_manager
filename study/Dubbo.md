@@ -32,8 +32,8 @@ Dubbox 需导入在本地maven仓库中，才可在pom.xml引入依赖。
     ```
 - 编译完成后，每个文件夹下，会生成对应的target文件，里面放着我们需要的jar包、war包等
     
-    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM%E6%88%AA%E5%9B%BE20190123150612.png)
-    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM%E6%88%AA%E5%9B%BE20190123150612.png)
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123150549.png)
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123150612.png)
 - 导入本地maven仓库中，执行maven命令：
     ```
     eg:
