@@ -24,6 +24,6 @@
     <!-- 具体服务接口的实现 -->
     <bean id="runDataxRestService" class="com.dashwood.modules.datax.service.impl.RunDataxRestServiceImpl" />
 
-    <dubbo:reference id="taskResultService" interface="com.jeeplus.modules.datax.job.TaskResultService"
+    <dubbo:reference id="dataxResultService" interface="com.dashwood.modules.datax.service.DataxResultService"
                      check="false" timeout="15000" registry="zookeeper" />
 </beans>

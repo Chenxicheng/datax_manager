@@ -43,10 +43,9 @@ public class DataXJobCounter implements Serializable {
     private String taskWaitWriterTime; // 写入延迟
     private String taskWaitReaderTime; // 读出延迟
     private String taskTotalDataSize; // 数据大小 单位bytes
-    private boolean hasException;
-    private String errorMsg;
-    
-    private String hdfsFileName;
+    private boolean hasException; // 是否有异常错误
+    private String errorMsg; // 异常错误信息
+    private String hdfsFileName; // hdfs文件名称
 
     public String getFileName() {
         return fileName;

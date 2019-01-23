@@ -133,13 +133,13 @@
         </dependency>
 
         <!-- 外部引入第三方jar包 使用此方式 -->
-        <dependency>
-            <groupId>com.jeeplus</groupId>
-            <artifactId>dataExchangeManageV2</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/jar/dataExchangeManageV2.jar</systemPath>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.jeeplus</groupId>-->
+            <!--<artifactId>dataExchangeManageV2</artifactId>-->
+            <!--<version>1.0</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/src/main/resources/jar/dataExchangeManageV2.jar</systemPath>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

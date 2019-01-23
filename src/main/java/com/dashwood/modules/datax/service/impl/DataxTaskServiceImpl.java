@@ -4,8 +4,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.dashwood.commen.utils.JsonFileUtils;
 import com.dashwood.modules.datax.croe.DataxEnginService;
 import com.dashwood.modules.datax.entity.DataXJobCounter;
+import com.dashwood.modules.datax.service.DataxResultService;
 import com.dashwood.modules.datax.service.DataxTaskService;
-import com.jeeplus.modules.datax.job.TaskResultService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
@@ -22,7 +22,7 @@ public class DataxTaskServiceImpl implements DataxTaskService {
     private DataxEnginService dataxEnginService;
 
     @Autowired
-    private TaskResultService taskResultService; // 平台提供dubbo接口
+    private DataxResultService dataxResultService; // 平台提供dubbo接口
 
     @Override
     @Async("taskExecutor")
@@ -34,7 +34,7 @@ public class DataxTaskServiceImpl implements DataxTaskService {
         String json = JSONObject.toJSONString(dataXJobCounter);
         log.info("======================  datax执行完毕 ==========================");
         log.info(json);
-        taskResultService.saveDataxTaskResult(dataXJobCounter);
+        dataxResultService.getDataxResult(dataXJobCounter);
     }
 
 }
