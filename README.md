@@ -114,6 +114,13 @@
     private String errorMsg; // 异常错误信息
     private String hdfsFileName; // hdfs文件名称    
     ``` 
+- 部署生产环境
+    
+    1. 生成jar包：在系统目录下执行maven命令 *mvn clean package*
+    2. 生成的jar在系统目录的target目录中 *datax_manager 0.0.1-SNAPSHOT.jar*
+    3. 在生产环境下的datax目录下，创建任意名称的目录，将jar放入其中
+    4. 生产环境运行jar *java -jar datax_manager 0.0.1-SNAPSHOT.jar*
+    
 ## 相关技术
 - [Datax](https://github.com/alibaba/DataX)
 - [Dubbox](https://github.com/dangdangdotcom/dubbox)
