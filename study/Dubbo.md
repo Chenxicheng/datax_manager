@@ -32,15 +32,21 @@ Dubbox 需导入在本地maven仓库中，才可在pom.xml引入依赖。
     ```
 - 编译完成后，每个文件夹下，会生成对应的target文件，里面放着我们需要的jar包、war包等
     
-    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123150549.png)
-    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123150612.png)
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM%E6%88%AA%E5%9B%BE20190123150549.png?raw=true)
+    
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123150612.png?raw=true)
 - 导入本地maven仓库中，执行maven命令：
     ```
     eg:
     mvn install:install-file -Dfile=D:\dubbox-master\dubbo\target\dubbo-2.8.4.jar -DgroupId=com.alibaba -DartifactId=dubbo -Dversion=2.8.4 -Dpackaging=jar -DgeneratePom=true
     ```
 - 导入成功后，在本地maven仓库可进行查看
-
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123151032.png?raw=true)
+    
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123151049.png?raw=true)
+    
+    ![](https://github.com/Chenxicheng/datax_manager/blob/master/study/img/TIM截图20190123151110.png?raw=true)
+    
 - 在系统pom.xml中进行依赖引入
     ```
     <dependency>

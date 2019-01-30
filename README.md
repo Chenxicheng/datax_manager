@@ -1,6 +1,7 @@
 # datax_manager
 
-基于springboot搭建的分布式执行datax系统，该系统是对外提供执行datax使用接口和返回结果。提供dubbo调用和rest调用两种方式。
+基于springboot搭建的分布式执行datax系统，该系统提供远程调用
+datax使用接口和返回结果。提供dubbo调用和rest调用两种方式。
 
 ## 系统使用
 
@@ -8,7 +9,7 @@
     ```
     eg: D:\datax\datax_manager
     ```
-- *resources/application.yml*中进行配置
+- *resources/application.yml* 中进行配置
     ```
     server:
       port: 8078 # 系统端口
@@ -116,14 +117,16 @@
     ``` 
 - 部署生产环境
     
-    1. 生成jar包：在系统目录下执行maven命令 *mvn clean package*
-    2. 生成的jar在系统目录的target目录中 *datax_manager 0.0.1-SNAPSHOT.jar*
-    3. 在生产环境下的datax目录下，创建任意名称的目录，将jar放入其中
-    4. 生产环境运行jar *java -jar datax_manager 0.0.1-SNAPSHOT.jar*
+    - 生成jar包：在系统目录下执行maven命令 *mvn clean package*
+    - 生成的jar在系统目录的target目录中 *datax_manager 0.0.1-SNAPSHOT.jar*
+    - 在生产环境下的datax目录下，创建任意名称的目录，将jar放入其中
+    - 生产环境运行jar *java -jar datax_manager 0.0.1-SNAPSHOT.jar*
     
 ## 相关技术
 - [Datax](https://github.com/alibaba/DataX)
-- [Dubbox](https://github.com/dangdangdotcom/dubbox)
+- [Dubbo](https://github.com/Chenxicheng/datax_manager/blob/master/study/Dubbo.md)
+- [zookeeper](https://github.com/Chenxicheng/datax_manager/blob/master/study/Zookeeper.md)
+- [maven](https://github.com/Chenxicheng/datax_manager/blob/master/study/Maven.md)
 
 
 

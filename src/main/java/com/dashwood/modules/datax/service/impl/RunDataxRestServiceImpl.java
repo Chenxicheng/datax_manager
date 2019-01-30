@@ -43,7 +43,7 @@ public class RunDataxRestServiceImpl implements RunDataxRestService {
                 JsonFileUtils.generateJsonFile(filePath, dataxJob.getReadConf(), dataxJob.getWriteConf(), dataxJob.getSettingConf());
                 dataxTaskService.doTask(fileName, filePath);
             } catch (Exception e) {
-                e.printStackTrace();
+                log.error(e.getMessage());
                 dataXJobCounter.setHasException(true);
                 dataXJobCounter.setErrorMsg(e.getMessage());
                 resultJSON.put("status", false);

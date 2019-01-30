@@ -39,7 +39,8 @@
 
 4. Maven命令的使用 
 
-    Maven的命令要在pom.xml所在目录中去执行，可在pom.xml所在文件夹中按住shift右键，点击“在此处启动命令窗口” 
+    Maven的命令要在pom.xml所在目录中去执行，可在pom.xml所在文件夹中按住shift右键，
+    点击“在此处启动命令窗口” 
 
 - mvn compile 
 编译的命令 
